@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--La actividad 3 y la Activida 4 en un mismo archivo -->
+
+<!--JUSTIFICACION DE LA PREGUNTA 3: Aseguro la compatibilidad usando propiedades CSS estándar, agregando prefijos cuando es necesario 
+y verificando el funcionamiento en los principales navegadores modernos-->
+
+<!--JUSTIFICACION DE LA PREGUNTA 4:EL Tailwind es una buena elección porque permite crear diseños responsivos y ordenados muy rápido usando clases utilitarias, 
+sin escribir tanto CSS y manteniendo el código limpio y fácil de mantener-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UNIVERSIDAD DEL SUR BNTS</title>
+
+    <!--EL CSS propio para el banner -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- El enlace para el cumplimiendo de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-100">
+
+    <!-- ACTIVIDAD 1: Banner con animación fade-in y desplazamiento -->
+    <header class="banner">
+        <nav class="menu">
+            <a href="#" class="menu-btn">Inicio</a>
+            <a href="#" class="menu-btn">Servicios</a>
+            <a href="#eventos" class="menu-btn">Eventos</a>
+            <a href="#" class="menu-btn">Contacto</a>
+        </nav>
+
+        <h1 class="banner-title">EMPRESA UNIVERSIDAD DEL SUR</h1>
+        <p class="banner-subtitle">
+            Aqui el Banner animado con CSS y sección de eventos con Tailwind </p>
+    </header>
+
+    <!-- ACTIVIDAD 2: Sección "Eventos Académicos" con Tailwind -->
+    <main>
+        <section id="eventos" class="py-12 px-4 md:px-8 bg-slate-900">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">
+                    Eventos Académicos
+                </h2>
+
+                <div class="grid gap-6 md:grid-cols-3">
+                    <!-- Tarjeta 1 -->
+                    <article
+                        class="bg-slate-800/80 rounded-2xl p-6 shadow transition hover:-translate-y-1 hover:shadow-xl hover:bg-slate-700/80">
+                        <h3 class="text-lg font-semibold mb-2">Taller de CSS Avanzado</h3>
+                        <p class="text-sm text-slate-300 mb-4">12 de diciembre, 2025</p>
+                        <button
+                            class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800 transition">
+                            Inscribirme
+                        </button>
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article
+                        class="bg-slate-800/80 rounded-2xl p-6 shadow transition hover:-translate-y-1 hover:shadow-xl hover:bg-slate-700/80">
+                        <h3 class="text-lg font-semibold mb-2">Seminario de UX y Accesibilidad</h3>
+                        <p class="text-sm text-slate-300 mb-4">20 de diciembre, 2025</p>
+                        <button
+                            class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800 transition">
+                            Inscribirme
+                        </button>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article
+                        class="bg-slate-800/80 rounded-2xl p-6 shadow transition hover:-translate-y-1 hover:shadow-xl hover:bg-slate-700/80">
+                        <h3 class="text-lg font-semibold mb-2">Seminario relacionado a la mejora del Frontend</h3>
+                        <p class="text-sm text-slate-300 mb-4">30 de diciembre, 2025</p>
+                        <button
+                            class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800 transition">
+                            Inscribirme
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
